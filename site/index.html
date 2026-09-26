@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mip videos</title>
+  <meta name="description" content="Screencasts and videos about mip, the MATLAB package manager.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><span class="logo">mip</span> videos</a>
+      <a class="home-link" href="https://mip.sh">mip.sh</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <input id="search" class="search" type="search" placeholder="Search videos" aria-label="Search videos" hidden>
+    <p id="status" class="status">Loading…</p>
+    <ul id="grid" class="grid"></ul>
+  </main>
+
+  <dialog id="player" aria-labelledby="player-title">
+    <div class="player-inner">
+      <button class="close" type="button" aria-label="Close">&times;</button>
+      <video id="player-video" controls playsinline preload="metadata"></video>
+      <div class="player-meta">
+        <h2 id="player-title"></h2>
+        <p class="meta-line" id="player-info"></p>
+        <p class="description" id="player-description"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
