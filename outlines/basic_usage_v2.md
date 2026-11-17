@@ -99,7 +99,7 @@ Revised from `basic_usage.md` after the practice recording on 2026-11-10. The or
 > mip install surfacefun   % plan: chebfun, then surfacefun
 > mip list
 > mip load surfacefun      % loads chebfun as well
-> path                     % chebfun ahead of surfacefun, plus surfacefun's 2 folders
+> pathtool                 % chebfun ahead of surfacefun, plus surfacefun's 2 folders
 > mip list                 % * next to surfacefun only
 > mip unload surfacefun    % "Unloading transitive dependencies: chebfun"
 > mip uninstall surfacefun % removes chebfun too, since nothing needs it
