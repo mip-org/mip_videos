@@ -110,13 +110,13 @@ Revised from `basic_usage.md` after the practice recording on 2026-11-10. The or
 >
 > Then the bigger example, which went well:
 > ```matlab
-> mip install chunky       % installs fmm2d (MEX) and flam (pure MATLAB) first
+> mip install chunkie      % installs fmm2d (MEX) and flam (pure MATLAB) first
 > mip unload --all
 > path                     % just mip and MATLAB's own
-> mip load chunky
+> mip load chunkie
 > path                     % all of the dependencies' folders, added for us
-> mip test chunky          % solves a PDE
-> mip uninstall chunky     % cleans up fmm2d and flam
+> mip test chunkie         % solves a PDE
+> mip uninstall chunkie    % cleans up fmm2d and flam
 > ```
 > - "This is where automatic path management pays off": no remembering which startup scripts to run, or in what order.
 
